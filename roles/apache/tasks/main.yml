@@ -1,0 +1,15 @@
+---
+# tasks file for apache
+
+- name: Install Apache
+  yum:
+    name: httpd
+    state: latest
+    update_cache: true
+
+- name: Ensure that port 80 is open
+  seport:
+    ports: 80
+    proto: tcp
+    setype: http_port_1
+    state: present

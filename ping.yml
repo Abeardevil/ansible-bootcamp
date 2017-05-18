@@ -1,6 +1,5 @@
 ---
-- hosts: all
-  gather_facts: false
+- hosts: tag_owner_ans13:&tag_function_db
   tasks:
     - name: Ping all hosts
       ping:

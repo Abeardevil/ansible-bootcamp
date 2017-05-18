@@ -1,0 +1,8 @@
+---
+- hosts: tag_owner_ans6:&tag_function_db
+  roles: 
+    - mysql
+
+- hosts: tag_owner_ans6:&tag_function_app
+  roles:
+    - apache

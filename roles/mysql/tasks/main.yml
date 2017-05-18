@@ -1,0 +1,13 @@
+---
+# tasks file for mysql
+
+- name: Install MySQL yum repository
+  yum:
+    name: https://dev.mysql.com/get/mysql57-community-release-el7-9.noarch.rpm
+    state: present
+
+- name: Install MySQL Server
+  yum:
+    name: mysql-community-server
+    state: latest
+    update_cache: true

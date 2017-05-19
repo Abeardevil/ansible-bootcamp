@@ -1,4 +1,5 @@
 ---
-- tasks:
+- hosts: tag_owner_ans6
+  tasks:
     - name: Ping all hosts
       ping:

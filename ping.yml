@@ -1,5 +1,4 @@
 ---
-- hosts: tag_owner_ans13:&tag_function_db
-  tasks:
+- tasks:
     - name: Ping all hosts
       ping:

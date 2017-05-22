@@ -14,10 +14,10 @@
 
 - name: Start MySQL service
   service:
-    name: mysql
+    name: mysqld
     state: started
 
 - name: Enable MySQL service on boot
   service:
-    name: mysql
+    name: mysqld
     enabled: true

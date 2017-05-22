@@ -15,7 +15,7 @@
 - name: Start MySQL service
   service:
     name: mysql
-    status: started
+    state: started
 
 - name: Enable MySQL service on boot
   service:

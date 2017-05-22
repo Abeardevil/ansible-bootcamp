@@ -7,9 +7,14 @@
     state: latest
     update_cache: true
 
-- name: Ensure that port 80 is open
-  seport:
-    ports: 80
-    proto: tcp
-    setype: http_port_1
-    state: present
+- name: Ensure that HTTP is enabled
+  firewalld:
+    service: http
+    permanent: true
+    state: enabled
+
+- name: Ensure that HTTPS is enabled
+  firewalld:
+    service: https
+    permanent: true
+    state: enabled

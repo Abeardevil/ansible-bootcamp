@@ -11,3 +11,13 @@
     name: mysql-community-server
     state: latest
     update_cache: true
+
+- name: Start MySQL service
+  service:
+    name: mysql
+    status: started
+
+- name: Enable MySQL service on boot
+  service:
+    name: mysql
+    enabled: true

@@ -7,14 +7,12 @@
     state: latest
     update_cache: true
 
-- name: Ensure that HTTP is enabled
-  firewalld:
-    service: http
-    permanent: true
-    state: enabled
+- name: Start Apache
+  service:
+    name: httpd
+    state: started
 
-- name: Ensure that HTTPS is enabled
-  firewalld:
-    service: https
-    permanent: true
-    state: enabled
+- name: Enable Apache on boot
+  service:
+    name: httpd
+    enabled: true

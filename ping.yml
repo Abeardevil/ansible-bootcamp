@@ -1,5 +1,6 @@
 ---
 - hosts: tag_owner_ans6
+  gather_facts: false
   tasks:
     - name: Ping all hosts
       ping:

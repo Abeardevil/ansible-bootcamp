@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: False
+  tasks:
+    - name: Get weather facts
+      scan_caleb:
+        latitude: 35.7796
+        longitude: -78.6382

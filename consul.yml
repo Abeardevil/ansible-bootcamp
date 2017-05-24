@@ -1,4 +1,4 @@
 ---
-- hosts: tag_owner_ans6
+- hosts: tag_owner_ans6:&tag_function_consul
   roles:
     - consul 

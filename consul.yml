@@ -1,0 +1,4 @@
+---
+- hosts: tag_owner_ans6
+  roles:
+    - consul 

@@ -1,0 +1,5 @@
+---
+- hosts: tag_owner_ans6:&tag_os_windows
+  tasks:
+    - name: Ping windows machines
+      win_ping:
